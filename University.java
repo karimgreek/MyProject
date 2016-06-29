@@ -1,7 +1,8 @@
 package Proje;
 
+
 import java.lang.reflect.Array;
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Created by karim on 27.06.2016.
@@ -9,10 +10,10 @@ import java.util.ArrayList;
 public class University {
 
 
-    private  String name;
+    private String name;
     private String address;
     private String dateOfEtablishement;
-    private ArrayList<String> departementAdded=new ArrayList<>();
+    private List departementAdded=new ArrayList();
     private int studentCount;
     private int teacherCount;
     private int personnelCount;
@@ -36,10 +37,10 @@ public class University {
     public void setDateOfEtablishement(String dateOfEtablishement) {
         this.dateOfEtablishement = dateOfEtablishement;
     }
-    public ArrayList<String> getDepartementAdded() {
+    public List  getDepartementAdded() {
         return departementAdded;
     }
-    public void setDepartementAdded(ArrayList<String> departementAdded) {
+    public void setDepartementAdded(List departementAdded) {
         this.departementAdded = departementAdded;
     }
     public int getStudentCount() {
@@ -60,6 +61,7 @@ public class University {
     public void setPersonnelCount(int personnelCount) {
         this.personnelCount = personnelCount;
     }
+
 
 
     public University(String name, String address, String dateOfEtablishement, int studentCount, int teacherCount, int personnelCount) {

@@ -31,12 +31,6 @@ public class Student extends PersonalInformation{
     int computeAverage(int sumOfCredits, int sumOfGrades){
         return (sumOfGrades*sumOfCredits)/sumOfCredits;
     }
-    void addCourse(Course object){
-        System.out.println(object.name + " has been successfully added");
-    }
-    void deleteCourse(Course object){
-        System.out.println(object.name + " has been successfully deleted");
-    }
 
 
 }

@@ -34,9 +34,5 @@ public class MainClass {
         computerengineering.addPersonnel(celalettin);
         System.out.println();
 
-        karim.deleteCourse(math);
-        karim.computeAverage(100,40);
-
-
     }
 }

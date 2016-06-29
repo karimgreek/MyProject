@@ -10,19 +10,19 @@ import java.util.List;
 public class Department  {
 
     private String name;
-    private ArrayList<String> studentAdded=new ArrayList<>();
-    private ArrayList<String> teacherAdded=new ArrayList<>();
-    private ArrayList<String> personellAdded=new ArrayList<>();
-    private List<String> classAvailables=new ArrayList<>();
+    private List studentAdded=new ArrayList<>();
+    private List teacherAdded=new ArrayList<>();
+    private List personellAdded=new ArrayList<>();
+    private List classAvailables=new ArrayList<>();
     private int studentCount;
     private int teacherCount;
     private int personellCount;
 
     public void setName(String name) {this.name = name;}
-    public void setStudentAdded(ArrayList<String> studentAdded) {this.studentAdded = studentAdded;}
-    public void setTeacherAdded(ArrayList<String> teacherAdded) {this.teacherAdded = teacherAdded;}
-    public void setPersonellAdded(ArrayList<String> personellAdded) {this.personellAdded = personellAdded;}
-    public void setClassAvailables(List<String> classAvailables) {this.classAvailables = classAvailables;}
+    public void setStudentAdded(List studentAdded) {this.studentAdded = studentAdded;}
+    public void setTeacherAdded(List teacherAdded) {this.teacherAdded = teacherAdded;}
+    public void setPersonellAdded(List personellAdded) {this.personellAdded = personellAdded;}
+    public void setClassAvailables(List classAvailables) {this.classAvailables = classAvailables;}
     public void setStudentCount(int studentCount) {this.studentCount = studentCount;}
     public void setTeacherCount(int teacherCount) {this.teacherCount = teacherCount;}
     public void setPersonellCount(int personellCount) {
@@ -31,7 +31,7 @@ public class Department  {
     public String getName() {
         return name;
     }
-    public ArrayList<String> getClassAvailables() {
+    public List getClassAvailables() {
         return classAvailables;
     }
     public int getStudentCount() {
@@ -43,13 +43,13 @@ public class Department  {
     public int getPersonellCount() {
         return personellCount;
     }
-    public ArrayList<String> getEmployeeAdded() {
+    public List getEmployeeAdded() {
         return personellAdded;
     }
-    public ArrayList<String> getStudentAdded() {
+    public List getStudentAdded() {
         return studentAdded;
     }
-    public ArrayList<String> getTeacherAdded() {
+    public List getTeacherAdded() {
         return teacherAdded;
     }
 
